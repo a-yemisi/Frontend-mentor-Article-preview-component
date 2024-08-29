@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+
+body {
+  font-family: "Manrope";
+  background-color: hsl(210, 46%, 95%);
+  align-content: center;
+  height: 100dvh;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #fff;
+  width: 90vw;
+  max-width: 28rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+}
+
+.card-text {
+  padding: 1.2rem;
+}
+
+.card-text h2 {
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.card-text p {
+  font-size: 1rem;
+}
+
+.card-text .avatar-info {
+  display: flex;
+  gap: 0.7rem;
+}
+
+.card-text .avatar-info .img-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+.card-text .avatar-info-share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.card-text .avatar-info-share .icon-share {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: hsl(212, 23%, 69%);
+  padding: 0.3rem;
+  border-radius: 3rem;
+}
+
+.card-text .avatar-info-share .icon-share:hover {
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 3rem;
+  box-shadow: 1px 1px 3px hsl(214, 17%, 51%);
+}
+
+.card-text .avatar-info h3 {
+  font-size: 1rem;
+}
+
+.share-options-div p {
+  display: none;
+}
+
+.share-options-div {
+  position: absolute;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  color: #fff;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 0.6rem;
+  align-items: center;
+  justify-content: center;
+  bottom: 4rem;
+  right: 0.3rem;
+}
+
+.share-options-div::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 0.7rem solid transparent;
+  border-right: 0.7rem solid transparent;
+  border-top: 0.7rem solid hsl(217, 19%, 35%);
+}
+
+.share-options-div img {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
+}
+
+.share-options-div p {
+  letter-spacing: 5px;
+  font-size: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 48rem) {
+  .card {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 80vw;
+    max-width: 50rem;
+  }
+
+  img {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-text {
+    padding: 1.5rem;
+  }
+
+  .share-options-div p {
+    display: block;
+  }
+
+  .share-options-div {
+    flex-direction: row;
+    bottom: 4rem;
+    right: -2.7rem;
+  }
+}
