@@ -27,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/a-yemisi/Frontend-mentor-Article-preview-component.git)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL here](https://a-yemisi.github.io/Frontend-mentor-Article-preview-component/)
 
 ## My process
 
